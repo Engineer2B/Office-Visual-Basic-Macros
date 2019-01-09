@@ -1,4 +1,4 @@
-Sub update_TOC()
+Sub UpdateTOC()
 Dim i, sectNumb As Long
 Dim shp As Shape
  
@@ -23,7 +23,7 @@ For Each shp In Application.ActiveWindow.View.Slide.Shapes
         
         
         'add hyperlinks
-        For i = 2 To sectNumb
+        For i = 3 To sectNumb
         
             'section name col
             With shp.Table.Cell(i - 1, 1).Shape.TextFrame.TextRange.ActionSettings(ppMouseClick).Hyperlink
